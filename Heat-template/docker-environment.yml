@@ -122,7 +122,7 @@ resources:
             export NDD=$NDD
             export EMAIL=$EMAIL
             export PASSWORD_TRAEFIK=$PASSWORD_TRAEFIK
-            bash -c "$(curl -s https://raw.githubusercontent.com/PAPAMICA/docker-environment/main/install-docker-environment.sh)"
+            bash -c "$(curl -s https://raw.githubusercontent.com/xneo1/docker-environment/main/install-docker-environment.sh)"
             wc_notify --data-binary '{"status": "SUCCESS"}'
 
           params:
