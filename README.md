@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://papamica.com">
-    <img src="https://zupimages.net/up/20/04/7vtd.png" width="140px" alt="PAPAMICA" />
+  <a href="https://github.com/xneo1">
+    <img src="https://raw.githubusercontent.com/xneo1/docker-compose-collection/master/img/Anchor2.png" width="140px" alt="xneo1" />
   </a>
 </p>
 
@@ -11,8 +11,8 @@
     Deploy a docker environment with Portainer and Traefik easily !
 </p>
 <p align="center">
-    <a href="https://github.com/PAPAMICA/docker-environment#deploy-on-debian--ubuntu"><img src="https://img.shields.io/badge/Deploy_on_Debian-%2341454A.svg?style=for-the-badge&logo=target&logoColor=white"> </a>
-    <a href="https://github.com/PAPAMICA/docker-environment#deploy-on-infomaniak-public-cloud-or-openstack"><img src="https://img.shields.io/badge/Deploy_on_Infomaniak_Public_cloud_(openstack)-%2341454A.svg?style=for-the-badge&logo=target&logoColor=white"> </a>
+    <a href="https://github.com/xneo1/docker-environment#deploy-on-debian--ubuntu"><img src="https://img.shields.io/badge/Deploy_on_Debian-%2341454A.svg?style=for-the-badge&logo=target&logoColor=white"> </a>
+    <a href="https://github.com/xneo1/docker-environment#deploy-on-infomaniak-public-cloud-or-openstack"><img src="https://img.shields.io/badge/Deploy_on_Infomaniak_Public_cloud_(openstack)-%2341454A.svg?style=for-the-badge&logo=target&logoColor=white"> </a>
     <br /><br />
     <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/docker-%232496ED.svg?style=for-the-badge&logo=docker&logoColor=white"> </a>
     <a href="https://www.portainer.io/"><img src="https://img.shields.io/badge/portainer-%2313BEF9.svg?style=for-the-badge&logo=portainer&logoColor=white"> </a>
@@ -32,7 +32,7 @@ export PASSWORD_TRAEFIK=<your_password>
 
 ### Use script
 ```bash
-bash -c "$(curl -s https://raw.githubusercontent.com/PAPAMICA/docker-environment/main/install-docker-environment.sh)"
+bash -c "$(curl -s https://raw.githubusercontent.com/xneo2/docker-environment/main/install-docker-environment.sh)"
 ```
 
 ### Redirect URL to IP
@@ -45,7 +45,7 @@ You need to redirect this URL to server IP:
 ## Deploy on Infomaniak Public Cloud (or OpenStack)
 You can use my heat template with this command:
 ```bash
-openstack stack create --template https://raw.githubusercontent.com/PAPAMICA/docker-environment/main/Heat-template/docker-environment.yml docker --wait \
+openstack stack create --template https://raw.githubusercontent.com/xneo1/docker-environment/main/Heat-template/docker-environment.yml docker --wait \
 --parameter image='Debian 11.3 bullseye' \
 --parameter flavor='a4-ram8-disk50-perf1' \
 --parameter key='<YOUR_KEY>' \
@@ -63,7 +63,7 @@ Check result and get IP:
 | id                    | f88dde5f-3729-4893-b06b-b6e57a9620af                                                                                             |
 | stack_name            | docker                                                                                                                           |
 | description           | Docker Environment                                                                                                               |
-| creation_time         | 2021-11-11T13:50:53Z                                                                                                             |
+| creation_time         | 2022-09-20T14:20:13Z                                                                                                             |
 | updated_time          | None                                                                                                                             |
 | stack_status          | CREATE_COMPLETE                                                                                                                  |
 | stack_status_reason   | Stack CREATE completed successfully                                                                                              |
@@ -75,7 +75,7 @@ Check result and get IP:
 |                       | flavor: a4-ram8-disk50-perf1                                                                                                     |
 |                       | floating_network_id: ext-floating1                                                                                               |
 |                       | image: Debian 11.3 bullseye                                                                                                      |
-|                       | key: PAPAMICA-INFOKEY                                                                                                            |
+|                       | key: xneo1-INFOKEY                                                                                                            |
 |                       | network: docker-network                                                                                                          |
 |                       | subnet_id: docker-subnet                                                                                                         |
 |                       |                                                                                                                                  |
@@ -109,6 +109,6 @@ Don't forget to redirect traefik.xxxxx.xxx and portainer.xxxxx.xxx to 195.15.XXX
 In this example, Traefik is accessible from : https://traefik.xxxxx.xxx with admin / xXXxxXXXxx1111XXX1 and Portainer is accessible from : https://portainer.xxxxx.xxx
 
 ## Templates for Portainer
-Feel free to use my templates and docker-compose for Portainer: 
-https://github.com/PAPAMICA/docker-compose-collection 
+Feel free to use my templates and docker-compose for Portainer (forked from PAPAMICA): 
+https://github.com/xneo1/docker-compose-collection 
 
