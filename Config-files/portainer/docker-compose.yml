@@ -10,7 +10,7 @@ services:
     networks:
       - proxy
     environment:
-      - TEMPLATES="https://raw.githubusercontent.com/PAPAMICA/docker-compose-collection/master/templates-portainer.json"
+      - TEMPLATES="https://raw.githubusercontent.com/xneo1/docker-compose-collection/master/templates-portainer.json"
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
