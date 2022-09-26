@@ -32,7 +32,7 @@ export PASSWORD_TRAEFIK=<your_password>
 
 ### Use script
 ```bash
-bash -c "$(curl -s https://raw.githubusercontent.com/xneo2/docker-environment/main/install-docker-environment.sh)"
+bash -c "$(curl -s https://raw.githubusercontent.com/xneo1/docker-environment/main/install-docker-environment.sh)"
 ```
 
 ### Redirect URL to IP
